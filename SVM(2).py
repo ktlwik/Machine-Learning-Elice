@@ -11,9 +11,6 @@ import random
 coef = 1e-9
 d = 3
 
-# *******************************
-# Please fill in the blanks below
-# *******************************
 def poly_kernel(x1, x2):
     return (coef * (x1[0] * x2[0] + x1[1] * x2[1]) + 1.0) ** d # Use the coef and d variable defined above!
 
@@ -42,10 +39,7 @@ def generate_data(n):
     X = np.array(list(zip(x1, x2)))
 
     return (X, y)
-
-# *******************************
-# Please fill in the blanks below
-# *******************************
+    
 def svm(X, y):
     n = len(y)
 

@@ -33,13 +33,9 @@ def generate_data(n):
 
     return (X, y)
 
-# *******************************
-# Please fill in the blanks below
-# *******************************
 def svm(X, y):
     n = len(y)
 
-    # Please define matrices / vectors P, q, G, h, A, b using X and y. 
     # Notations P, q, G, h, A, b are the conventional notations for quadratic programming. 
     # You can find example usage of quadratic programming using cvxopt module in the webpage: courses.csail.mit.edu/6.867/wiki/images/a/a7/Qp-cvxopt.pdf
     P = np.zeros(shape=(n, n));
@@ -129,7 +125,5 @@ def draw(X, y, W, b, support_vec_idx):
 if __name__ == '__main__':
     X, y = generate_data(100)
     W, b, support_vec_idx = svm(X, y)
-    # Comment out the function below after you optimize all the parameters and find the support vectors!
     draw_datasetonly(X, y)
-    # Use the function below after you optimize all the parameters and find the support vectors!
     # draw(X, y, W, b, support_vec_idx) 
